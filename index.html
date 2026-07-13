@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernbank &amp; Rowe — Events</title>
+  <meta name="description" content="Upcoming author talks, readings and workshops at Fernbank & Rowe Booksellers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Applied before first paint to avoid a flash of the wrong theme.
+    (function () {
+      try {
+        var stored = localStorage.getItem("fr-theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        /* localStorage unavailable — default styling (light) applies. */
+      }
+    })();
+  </script>
+
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="wrap site-header__row">
+      <a class="brand" href="#" aria-label="Fernbank & Rowe home">
+        <span class="brand__mark" aria-hidden="true">FR</span>
+        <span class="brand__text">
+          <span class="brand__name">Fernbank &amp; Rowe</span>
+          <span class="brand__tag">Booksellers, est. 1978</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" id="navToggle">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#main-content" class="is-current" aria-current="page">Events</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Switch to dark mode">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <circle cx="10" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <line x1="10" y1="1.4" x2="10" y2="3.4"/>
+            <line x1="10" y1="16.6" x2="10" y2="18.6"/>
+            <line x1="1.4" y1="10" x2="3.4" y2="10"/>
+            <line x1="16.6" y1="10" x2="18.6" y2="10"/>
+            <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/>
+            <line x1="14.4" y1="14.4" x2="15.8" y2="15.8"/>
+            <line x1="4.2" y1="15.8" x2="5.6" y2="14.4"/>
+            <line x1="14.4" y1="5.6" x2="15.8" y2="4.2"/>
+          </g>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <path d="M17 11.5A7 7 0 0 1 8.5 3 7.5 7.5 0 1 0 17 11.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main-content">
+
+    <!-- ================= HERO SLIDER ================= -->
+    <section class="hero-slider" aria-label="Featured events">
+      <div class="hero-slider__float" aria-hidden="true">
+        <svg class="hero-float hero-float--1" viewBox="0 0 40 30"><rect x="2" y="4" width="30" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="2" y1="10" x2="32" y2="10" stroke="currentColor" stroke-width="1"/></svg>
+        <svg class="hero-float hero-float--2" viewBox="0 0 40 30"><path d="M4 6 Q20 0 36 6 L36 24 Q20 18 4 24 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="20" y1="2" x2="20" y2="21" stroke="currentColor" stroke-width="1"/></svg>
+        <svg class="hero-float hero-float--3" viewBox="0 0 40 30"><rect x="2" y="4" width="30" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="2" y1="10" x2="32" y2="10" stroke="currentColor" stroke-width="1"/></svg>
+        <svg class="hero-float hero-float--4" viewBox="0 0 40 30"><path d="M4 6 Q20 0 36 6 L36 24 Q20 18 4 24 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="20" y1="2" x2="20" y2="21" stroke="currentColor" stroke-width="1"/></svg>
+        <svg class="hero-float hero-float--5" viewBox="0 0 40 30"><rect x="2" y="4" width="30" height="22" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><line x1="2" y1="10" x2="32" y2="10" stroke="currentColor" stroke-width="1"/></svg>
+      </div>
+
+      <div class="hero-slider__slides" id="heroSlides">
+        <div class="hero-slide is-active" style="background-image:url('images/image5.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('images/image1.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('images/image6.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('images/image7.jpeg')"></div>
+        <div class="hero-slide" style="background-image:url('images/image3.jpeg')"></div>
+      </div>
+
+      <div class="hero-slider__scrim" aria-hidden="true"></div>
+
+      <div class="hero-slider__content">
+        <p class="eyebrow eyebrow--on-dark">Fernbank &amp; Rowe Booksellers</p>
+        <h1 class="hero-slider__title">Library Event Reservation</h1>
+        <p class="hero-slider__lede">Readings, workshops and book talks — held in the reading room, open to everyone with a seat left to fill.</p>
+        <div class="hero-slider__actions">
+          <a href="#eventGrid" class="btn btn--primary btn--lg">Reserve a seat</a>
+          <a href="#gallery" class="btn btn--ghost-on-dark btn--lg">View gallery</a>
+        </div>
+      </div>
+
+      <div class="hero-slider__dots" id="heroDots" role="tablist" aria-label="Featured slides"></div>
+    </section>
+
+    <section class="page-intro">
+      <div class="wrap">
+        <p class="eyebrow">Events desk</p>
+        <h2>What's on the calendar</h2>
+        <p class="page-intro__lede">Search the schedule, filter by kind or date, and reserve a seat. Staff can confirm any listing at the front desk terminal.</p>
+      </div>
+    </section>
+
+    <!-- ================= AT A GLANCE ================= -->
+    <section class="glance" aria-label="Events at a glance">
+      <div class="wrap glance__grid" id="glanceGrid">
+        <div class="glance__card">
+          <p class="glance__number" id="glanceTotal">—</p>
+          <p class="glance__label">Events this stretch</p>
+        </div>
+        <div class="glance__card">
+          <p class="glance__number" id="glanceSeats">—</p>
+          <p class="glance__label">Seats still open</p>
+        </div>
+        <div class="glance__card">
+          <p class="glance__number" id="glanceNext">—</p>
+          <p class="glance__label">Next on the calendar</p>
+        </div>
+        <div class="glance__card">
+          <p class="glance__number" id="glanceCategories">—</p>
+          <p class="glance__label">Kinds of events on offer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTROLS ================= -->
+    <section class="controls" aria-label="Search and filter events">
+      <div class="wrap controls__row">
+
+        <div class="field field--search">
+          <label for="searchInput">Search events</label>
+          <div class="field__control">
+            <svg class="field__icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+              <circle cx="9" cy="9" r="6.25" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <line x1="13.6" y1="13.6" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            <input type="text" id="searchInput" name="searchInput" autocomplete="off"
+                   placeholder="Try “poetry”, “Naomi”, or “Saturday”"
+                   aria-describedby="searchHelp">
+          </div>
+          <span id="searchHelp" class="visually-hidden">Searches event title, author and description</span>
+        </div>
+
+        <fieldset class="field field--filters">
+          <legend>Filter by category</legend>
+          <div class="chip-group" id="categoryChips" role="group" aria-label="Event category filters">
+            <button type="button" class="chip is-active" data-category="all" aria-pressed="true">All</button>
+            <button type="button" class="chip" data-category="reading" aria-pressed="false">Reading</button>
+            <button type="button" class="chip" data-category="workshop" aria-pressed="false">Workshop</button>
+            <button type="button" class="chip" data-category="panel" aria-pressed="false">Panel</button>
+            <button type="button" class="chip" data-category="book-club" aria-pressed="false">Book club</button>
+            <button type="button" class="chip" data-category="kids" aria-pressed="false">Kids</button>
+          </div>
+        </fieldset>
+
+        <div class="field field--sort">
+          <label for="sortSelect">Sort by</label>
+          <select id="sortSelect" name="sortSelect">
+            <option value="date-asc">Date — soonest first</option>
+            <option value="date-desc">Date — latest first</option>
+            <option value="title-asc">Title — A to Z</option>
+            <option value="availability">Seats remaining</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="wrap controls__meta">
+        <p id="resultsCount" aria-live="polite">Loading events…</p>
+        <button type="button" class="link-btn" id="resetFilters">Reset filters</button>
+      </div>
+    </section>
+
+    <!-- ================= EVENTS LIST ================= -->
+    <section class="events-section" aria-labelledby="events-heading">
+      <h2 class="visually-hidden" id="events-heading">Event results</h2>
+      <div class="wrap">
+
+        <!-- Loading skeleton -->
+        <div class="skeleton-grid" id="skeletonGrid" aria-hidden="true">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+
+        <!-- Error banner -->
+        <div class="state-panel state-panel--error" id="errorPanel" hidden role="alert">
+          <p class="state-panel__title">The schedule didn't load</p>
+          <p class="state-panel__body">The connection dropped before the events could load. Check the network and try again.</p>
+          <button type="button" class="btn btn--primary" id="retryLoad">Retry</button>
+        </div>
+
+        <!-- Empty state -->
+        <div class="state-panel state-panel--empty" id="emptyPanel" hidden>
+          <p class="state-panel__title">No events found</p>
+          <p class="state-panel__body">Nothing matches that search or filter combination. Try a different term or clear the filters below.</p>
+          <button type="button" class="btn btn--secondary" id="clearFromEmpty">Clear search &amp; filters</button>
+        </div>
+
+        <!-- Event grid -->
+        <ul class="event-grid" id="eventGrid" hidden></ul>
+
+      </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how-it-works" aria-labelledby="how-heading">
+      <div class="wrap">
+        <p class="eyebrow">For staff and guests</p>
+        <h2 id="how-heading">How a reservation comes together</h2>
+        <ol class="timeline">
+          <li class="timeline__step">
+            <span class="timeline__dot">01</span>
+            <div class="timeline__body">
+              <h3>Find the listing</h3>
+              <p>Search by title, author or day, or narrow things down with a category chip. Sort by soonest, latest, title or seats remaining.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__dot">02</span>
+            <div class="timeline__body">
+              <h3>Open the details</h3>
+              <p>Click any card to see the full description, host, location and how many seats remain before committing.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__dot">03</span>
+            <div class="timeline__body">
+              <h3>Reserve a seat</h3>
+              <p>Fill in name, email and seat count. Bad entries are flagged in place — nothing submits until the form is clean.</p>
+            </div>
+          </li>
+          <li class="timeline__step">
+            <span class="timeline__dot">04</span>
+            <div class="timeline__body">
+              <h3>Receive confirmation</h3>
+              <p>A confirmation appears immediately, and the seat count updates for the next visitor browsing the same listing.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+      <div class="wrap">
+        <p class="eyebrow">A look inside</p>
+        <h2 id="gallery-heading">Workshop &amp; event highlights</h2>
+        <p class="gallery__lede">Scenes from recent readings, workshops and storytimes in the reading room.</p>
+
+        <div class="gallery__carousel">
+          <button type="button" class="gallery__arrow gallery__arrow--prev" id="galleryPrev" aria-label="Show previous photos">
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+
+          <ul class="gallery__track" id="galleryGrid">
+            <li><button type="button" class="gallery__item" data-full="images/image1.jpeg"><img src="images/image1.jpeg" alt="Guests seated for a reading in the reading room" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image2.jpeg"><img src="images/image2.jpeg" alt="A workshop facilitator leading a session" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image3.jpeg"><img src="images/image3.jpeg" alt="Panelists in conversation on the main floor" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image4.jpeg"><img src="images/image4.jpeg" alt="Book club members discussing a title" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image5.jpeg"><img src="images/image5.jpeg" alt="Storytime in the children's corner" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image6.jpeg"><img src="images/image6.jpeg" alt="An author reading and taking questions" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image7.jpeg"><img src="images/image7.jpeg" alt="Attendees browsing shelves before an event" loading="lazy"></button></li>
+            <li><button type="button" class="gallery__item" data-full="images/image8.jpeg"><img src="images/image8.jpeg" alt="A quiet corner of the reading room" loading="lazy"></button></li>
+          </ul>
+
+          <button type="button" class="gallery__arrow gallery__arrow--next" id="galleryNext" aria-label="Show next photos">
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M7.5 4 13.5 10l-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+
+        <div class="gallery__dots" id="galleryDots" role="tablist" aria-label="Gallery photos"></div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="wrap">
+        <p class="eyebrow">What visitors say</p>
+        <h2 id="testimonials-heading" class="visually-hidden">Testimonials</h2>
+
+        <div class="testimonial-track" id="testimonialTrack">
+          <ul class="testimonial-slides" id="testimonialSlides">
+            <li class="testimonial is-active">
+              <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+              <blockquote>The reservation system made our workshops very easy to plan and staff around.</blockquote>
+              <p class="testimonial__author">— Student</p>
+            </li>
+            <li class="testimonial">
+              <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+              <blockquote>Professional interface and an easy booking flow from search to confirmation.</blockquote>
+              <p class="testimonial__author">— Faculty</p>
+            </li>
+            <li class="testimonial">
+              <p class="testimonial__stars" aria-hidden="true">★★★★★</p>
+              <blockquote>Event management on our end became effortless once this went live.</blockquote>
+              <p class="testimonial__author">— Librarian</p>
+            </li>
+          </ul>
+          <div class="testimonial-dots" id="testimonialDots" role="tablist" aria-label="Testimonials"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISIT US ================= -->
+    <section class="visit-us" id="visit" aria-labelledby="visit-heading">
+      <div class="wrap visit-us__grid">
+        <div>
+          <p class="eyebrow">Find us</p>
+          <h2 id="visit-heading">Visit the reading room</h2>
+          <p>Events are held in the reading room at the rear of the store. Seating is unreserved after ten minutes past the start time, so arrive early for popular listings.</p>
+        </div>
+        <dl class="visit-us__facts">
+          <div>
+            <dt>Address</dt>
+            <dd>412 Kestrel Street, Linden Falls</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Open daily, 9am – 8pm</dd>
+          </div>
+          <div>
+            <dt>Reading room</dt>
+            <dd>Rear of the store, past the periodicals</dd>
+          </div>
+          <div>
+            <dt>Questions</dt>
+            <dd>Ask any staff member at the front desk</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= EVENT DETAIL / RSVP DIALOG ================= -->
+  <div class="dialog-backdrop" id="dialogBackdrop" hidden>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle" id="eventDialog">
+      <button type="button" class="dialog__close" id="dialogClose" aria-label="Close event details">
+        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+          <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="dialog__media">
+        <img src="" alt="" id="dialogImage" class="dialog__image">
+        <span class="dialog__badge" id="dialogDifficulty"></span>
+      </div>
+
+      <div class="dialog__content" id="dialogContent">
+        <p class="eyebrow" id="dialogCategory">Reading</p>
+        <h2 id="dialogTitle">Event title</h2>
+
+        <div class="dialog__host">
+          <span class="dialog__avatar" id="dialogAvatar" aria-hidden="true"></span>
+          <div>
+            <p class="dialog__host-name" id="dialogHostName"></p>
+            <p class="dialog__host-role">Host</p>
+          </div>
+        </div>
+
+        <ul class="dialog__tags" id="dialogTags"></ul>
+
+        <dl class="dialog__facts" id="dialogFacts"></dl>
+        <p class="dialog__description" id="dialogDescription"></p>
+
+        <div class="dialog__map">
+          <iframe
+            id="dialogMap"
+            title="Map showing the store location"
+            src="https://maps.google.com/maps?q=Linden%20Falls&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <form class="rsvp-form" id="rsvpForm" novalidate>
+          <h3>Reserve a seat</h3>
+
+          <div class="form-row">
+            <label for="rsvpName">Full name</label>
+            <input type="text" id="rsvpName" name="rsvpName" required aria-describedby="rsvpNameError" autocomplete="name">
+            <p class="form-error" id="rsvpNameError" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="rsvpEmail">Email address</label>
+            <input type="email" id="rsvpEmail" name="rsvpEmail" required aria-describedby="rsvpEmailError" autocomplete="email">
+            <p class="form-error" id="rsvpEmailError" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="rsvpGuests">Seats requested</label>
+            <input type="number" id="rsvpGuests" name="rsvpGuests" min="1" max="6" value="1" required aria-describedby="rsvpGuestsError">
+            <p class="form-error" id="rsvpGuestsError" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <label for="rsvpNotes">Notes <span class="optional">(optional)</span></label>
+            <textarea id="rsvpNotes" name="rsvpNotes" rows="3" maxlength="280"></textarea>
+          </div>
+
+          <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+
+          <div class="dialog__actions">
+            <button type="submit" class="btn btn--primary" id="rsvpSubmit">Reserve seat</button>
+            <button type="button" class="btn btn--ghost" id="dialogCancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live region for background status announcements -->
+  <div id="statusRegion" class="visually-hidden" role="status" aria-live="polite"></div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap site-footer__grid">
+
+      <div class="site-footer__brand">
+        <a class="brand" href="#" aria-label="Fernbank & Rowe home">
+          <span class="brand__mark" aria-hidden="true">FR</span>
+          <span class="brand__name">Fernbank &amp; Rowe</span>
+        </a>
+        <p class="site-footer__muted">Library Event Management System</p>
+        <p class="site-footer__muted">412 Kestrel Street, Linden Falls</p>
+        <p class="site-footer__muted">Open daily, 9am – 8pm</p>
+      </div>
+
+      <div>
+        <h2>Quick links</h2>
+        <ul class="site-footer__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#eventGrid">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div id="about">
+        <h2>About this page</h2>
+        <p class="site-footer__muted">Internal staff tool for viewing and managing the store's event calendar.</p>
+      </div>
+
+      <div>
+        <h2>Contact</h2>
+        <p class="site-footer__muted">Reach the events desk through the front counter or the store's main line during open hours.</p>
+        <ul class="site-footer__social" aria-label="Social media">
+          <li><a href="#" aria-label="Fernbank & Rowe on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a></li>
+          <li><a href="#" aria-label="Fernbank & Rowe on X"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="1.6"/><line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="1.6"/></svg></a></li>
+          <li><a href="#" aria-label="Fernbank & Rowe on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M13.5 8.5h1.6V6.2h-1.9c-1.7 0-2.6 1-2.6 2.6v1.4H9v2.3h1.6V18h2.3v-5.5h1.7l.3-2.3h-2V9c0-.3.1-.5.6-.5Z" fill="currentColor"/></svg></a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p>© 2026 Fernbank &amp; Rowe Booksellers. Internal use only.</p>
+    </div>
+  </footer>
+
+  <!-- ================= GALLERY LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Close image">
+      <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+        <line x1="4" y1="4" x2="16" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        <line x1="16" y1="4" x2="4" y2="16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <img src="" alt="" id="lightboxImage">
+  </div>
+
+  <script src="analytics.js"></script>
+  <script src="utils.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
