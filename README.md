@@ -151,20 +151,6 @@ Using a local server is helpful when reviewing the project in a development work
 9. Submit the form and review inline validation or success feedback.
 10. Retry loading if the demo intentionally triggers the error state.
 
-## Screenshots
-
-### Home Page
-(Add Screenshot)
-
-### Event Details
-(Add Screenshot)
-
-### RSVP Form
-(Add Screenshot)
-
-### Dark Theme
-(Add Screenshot)
-
 ## Accessibility Features
 - Semantic headings and structured page sections.
 - Skip link for keyboard users.
@@ -215,13 +201,9 @@ This project demonstrates practical learning in semantic front-end architecture,
 
 **Kriti Tripathi**
 
-B.S.c Computer Science & Data Analytics
+B.Sc Computer Science & Data Analytics
 
 Indian Institute of Technology Patna
 
-- GitHub: [Add GitHub URL]
-- LinkedIn: [Add LinkedIn URL]
-- Email: [Add Email Address]
-
-## License
-This project is released under the MIT License.
+- GitHub: [[Add GitHub URL]](https://github.com/kriti-2006/Independent-Bookstore-Events-Page)
+- Live Link: [[Add LinkedIn URL]](https://independent-bookstore-events-page.vercel.app/)
