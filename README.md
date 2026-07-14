@@ -205,5 +205,5 @@ B.Sc Computer Science & Data Analytics
 
 Indian Institute of Technology Patna
 
-- GitHub: [[Add GitHub URL]](https://github.com/kriti-2006/Independent-Bookstore-Events-Page)
-- Live Link: [[Add LinkedIn URL]](https://independent-bookstore-events-page.vercel.app/)
+- GitHub: [[GitHub URL]](https://github.com/kriti-2006/Independent-Bookstore-Events-Page)
+- Live Link: [[LIVE LINK URL]](https://independent-bookstore-events-page.vercel.app/)
